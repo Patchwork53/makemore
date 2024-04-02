@@ -14,13 +14,13 @@ An inference-time technique that makes attention O(n) by storing past keys and v
 Generated 4000 (shakespeare) lines of upto upto 77 characters
 
 
-# Observation
+### Observation
 - KV cache won't work during training since weights are changing
 - Works with all types of embeddings
 - Won't work when the context window is shifted since the KV cache in memory would be invalid since they use the old postional embeddings
 - Basically works within one context window
 
-# Upnext
+# Up Next
 - RoPE
 - Speculative Decoding
 
